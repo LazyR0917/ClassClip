@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp">
+
+    <!-- 底层红色删除按钮：仅左滑露出时才可见，平时完全隐藏（不可见不可点） -->
+    <TextView
+        android:id="@+id/btn_item_delete"
+        android:layout_width="76dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/brand_danger"
+        android:gravity="center"
+        android:text="@string/tt_delete"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+    <!-- 上层课程卡片 -->
+    <LinearLayout
+        android:id="@+id/item_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card_gray"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- 课名（整卡可点进编辑） -->
+        <TextView
+            android:id="@+id/tv_item_course_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brand_text_dark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="计算机图形/图像处理技术" />
+
+        <TextView
+            android:id="@+id/tv_item_course_weeks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/brand_text_dark"
+            android:textSize="13sp"
+            tools:text="第5-12周" />
+
+        <TextView
+            android:id="@+id/tv_item_course_slot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/brand_text_gray"
+            android:textSize="12sp"
+            tools:text="周四 | 第3-4节 | 10:00 - 11:40" />
+
+        <TextView
+            android:id="@+id/tv_item_course_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/brand_text_gray"
+            android:textSize="12sp"
+            tools:text="教室：第一教学楼305" />
+
+        <TextView
+            android:id="@+id/tv_item_course_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/brand_text_gray"
+            android:textSize="12sp"
+            tools:text="老师：李艳军" />
+    </LinearLayout>
+</FrameLayout>

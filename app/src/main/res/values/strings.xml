@@ -1,0 +1,342 @@
+<resources>
+    <string name="app_name">ClassClip</string>
+
+    <!-- 底部导航 -->
+    <string name="tab_schedule">课程表</string>
+    <string name="tab_todo">待办</string>
+    <string name="tab_habit">习惯</string>
+    <string name="tab_plan">规划</string>
+
+    <!-- 占位页 -->
+    <string name="placeholder_schedule">课程表\n\n（第 1 页 · 待实现）</string>
+    <string name="placeholder_todo">待办列表\n\n（第 2 页 · 待实现）</string>
+    <string name="placeholder_habit">习惯打卡\n\n（第 3 页 · 待实现）</string>
+    <string name="placeholder_plan">时间规划\n\n（第 4 页 · 待实现）</string>
+
+    <!-- 课程表页 -->
+    <string name="timetable_title">课程表</string>
+    <string name="timetable_subtitle">2026 秋季学期 · 好好安排每一节课</string>
+    <string name="timetable_hint">今天 3 节课，留一点时间给自己</string>
+    <string name="timetable_this_week">本周</string>
+    <string name="timetable_menu">菜单</string>
+    <string name="timetable_menu_todo">菜单功能开发中，敬请期待</string>
+    <string name="timetable_week_default">本 周</string>
+    <string name="timetable_week_label">第 %1$d 周  %2$s — %3$s</string>
+    <string name="timetable_week_range">%1$s — %2$s</string>
+    <string name="timetable_next_label">下一节 · 大学英语 19 分钟后</string>
+    <string name="timetable_next_name">大学英语 · 教室A101</string>
+    <string name="timetable_next_time">10:00 – 11:35 · 李老师</string>
+    <string name="timetable_picker_pick_date">选择日期</string>
+    <string name="timetable_no_scheme">还没有上课时间，去侧边栏「上课时间」设置吧</string>
+
+    <!-- 上课时间方案 -->
+    <string name="settings_title">上课时间</string>
+    <string name="scheme_list_title">设置时间表</string>
+    <string name="scheme_list_hint">点卡片进入编辑，「使用」切换当前上课时间</string>
+    <string name="scheme_list_create">创建</string>
+    <string name="scheme_page_create_title">新建时间表</string>
+    <string name="scheme_page_edit_title">编辑时间表</string>
+    <string name="scheme_save_use">保存并使用</string>
+    <string name="scheme_name_label">方案名称</string>
+    <string name="scheme_name_hint2">如：湖南科技大学夏季时</string>
+    <string name="scheme_class_duration">设置每节课上课时长</string>
+    <string name="scheme_small_break">小课间休息时长</string>
+    <string name="scheme_big_break">大课间休息时长</string>
+    <string name="scheme_minutes_fmt">%1$d min</string>
+    <string name="scheme_minutes_input">时长（分钟）</string>
+    <string name="scheme_morning_count">上午课程节数</string>
+    <string name="scheme_afternoon_count">下午课程节数</string>
+    <string name="scheme_evening_count">晚上课程节数</string>
+    <string name="scheme_period_row">第%1$d节课</string>
+    <string name="scheme_edit_time_title">修改本节时间</string>
+    <string name="scheme_edit_start">开始</string>
+    <string name="scheme_edit_end">结束</string>
+    <string name="scheme_created_at_fmt">创建于 %1$s</string>
+    <string name="scheme_tap_edit">点击进入编辑</string>
+    <string name="scheme_in_use">使用中</string>
+    <string name="scheme_use">使用</string>
+    <string name="scheme_delete_page">删除方案</string>
+    <string name="scheme_delete_confirm">确定删除这个方案吗？</string>
+    <string name="scheme_invalid_time">时间格式不对，请用如 8:00 的格式</string>
+    <string name="scheme_min_count">至少保留 1 节课</string>
+    <string name="settings_semester_start">学期第一周</string>
+    <string name="scheme_hint">点击方案即可切换使用</string>
+
+    <!-- 设置开学日期整页 -->
+    <string name="semester_title">开学日期</string>
+    <string name="semester_hint">开学日期需要填写你开学的第一天</string>
+    <string name="semester_compute_prefix">根据你选择的开学日期推算当前为</string>
+    <string name="semester_week_fmt">第 %1$d 周</string>
+    <string name="semester_not_started">未开学</string>
+    <string name="semester_over">已放暑假</string>
+    <string name="semester_compute_hint">改动下方日期，推算会实时更新</string>
+    <string name="semester_pick_label">选择开学日期：</string>
+    <string name="semester_weeks_label">上课周数</string>
+    <string name="semester_confirm">确认</string>
+    <string name="semester_saved">已保存开学日期设置</string>
+    <string name="scheme_add">新建方案</string>
+    <string name="scheme_done">完成</string>
+    <string name="scheme_edit_title">编辑方案</string>
+    <string name="scheme_create_title">新建方案</string>
+    <string name="scheme_name_hint">方案名称（如：湖南科技大学夏季时）</string>
+    <string name="scheme_name_required">请填写方案名称</string>
+    <string name="scheme_time_label">每节课时间</string>
+    <string name="scheme_time_invalid">时间格式不对，请用如 8:00 的格式</string>
+    <string name="scheme_saved">已保存</string>
+    <string name="scheme_activated">已切换上课时间方案</string>
+    <string name="scheme_deleted">已删除方案</string>
+    <string name="scheme_delete_last">至少保留一个方案</string>
+    <string name="scheme_action_edit">编辑</string>
+    <string name="scheme_action_delete">删除</string>
+    <string name="scheme_cancel">取消</string>
+    <string name="scheme_save">保存</string>
+
+    <!-- 导入课程表 -->
+    <string name="import_title">导入课程表</string>
+    <string name="import_warning">导入会替换课表中的全部课程</string>
+    <string name="import_tab_text">粘贴文本</string>
+    <string name="import_tab_file">选择文件</string>
+    <string name="import_paste_hint">粘贴教务系统或学校 App 复制的课表文字…</string>
+    <string name="import_parse">解析预览</string>
+    <string name="import_pick_file">选择文件（.txt / .csv / .xls）</string>
+    <string name="import_pick_note">已支持文本文件和 Excel 97-2003 表格（.xls）；.xlsx 可先用 Excel/WPS 另存为 .xls，或复制内容用「粘贴文本」导入</string>
+    <string name="import_unsupported">无法识别该文件格式，请先转成 .txt / .xls，或复制内容用「粘贴文本」导入</string>
+    <string name="import_confirm">确认导入</string>
+    <string name="import_cancel">取消</string>
+    <string name="import_parsed_none">未识别到课程，请检查文字格式</string>
+    <string name="import_read_fail">读取文件失败，请换用「粘贴文本」导入</string>
+    <string name="import_done">导入成功，共 %1$d 门课程</string>
+    <string name="import_overwrite_title">覆盖现有课表？</string>
+    <string name="import_overwrite_msg">当前课表已有 %1$d 门课程，导入后将替换为识别到的 %2$d 门课程，此操作不可撤销。</string>
+    <string name="import_overwrite_confirm">覆盖导入</string>
+
+    <!-- 添加课程（整页表单） -->
+    <string name="course_add_title">添加课程</string>
+    <string name="course_add_banner_week">当前为第 %1$d 周 · 共 %2$d 周</string>
+    <string name="course_add_banner_no_semester">尚未设置开学日期</string>
+    <string name="course_add_banner_hint">在抽屉「开学日期」中设置后可自动计算周数</string>
+    <string name="course_name_label">课程名称</string>
+    <string name="course_name_hint2">请输入添加的课程名称</string>
+    <string name="course_week_label">课程周期</string>
+    <string name="course_week_value">第%1$d-%2$d周</string>
+    <string name="course_period_label">课程节数</string>
+    <string name="course_room_label2">教室地点</string>
+    <string name="course_room_hint">请输入教室地点</string>
+    <string name="course_teacher_label">任课老师</string>
+    <string name="course_teacher_hint">请输入任课老师</string>
+    <string name="course_add_slot_section">上课时间</string>
+    <string name="course_slot_title">时段%1$d</string>
+    <string name="course_slot_delete">⊖ 删除时段</string>
+    <string name="course_period_unset">请选择课程节数</string>
+    <string name="course_slot_required">请先为每个时段选择课程节数</string>
+    <string name="course_add_slot_single">%1$s 第%2$d节</string>
+    <string name="course_add_slot_range">%1$s 第%2$d-%3$d节</string>
+    <string name="course_add_more_time">如果有多个上课时间，点此增加上课时间 +</string>
+    <string name="course_week_picker_title">选择上课周数</string>
+    <string name="course_week_from">从</string>
+    <string name="course_week_to">至</string>
+    <string name="course_slot_picker_title">选择上课时间</string>
+    <string name="course_created_multi">已添加课程（%1$d 个时间段）</string>
+
+    <!-- 添加待办（整页表单，暂不做保存功能） -->
+    <string name="todo_add_title">添加待办</string>
+    <string name="todo_edit_title">编辑待办</string>
+    <string name="todo_title_label">标题</string>
+    <string name="todo_title_hint">请输入待办标题</string>
+    <string name="todo_note_label">备注</string>
+    <string name="todo_note_hint">选填</string>
+    <string name="todo_time_label">时间</string>
+    <string name="todo_time_hint">选择日期</string>
+    <string name="todo_date_label">日期</string>
+    <string name="todo_time_unset">未选择</string>
+    <string name="todo_save_pending">待办保存将随「待办」页功能一起开放</string>
+
+    <!-- 空格子弹窗选项 -->
+    <string name="grid_add_course">添加课程</string>
+    <string name="grid_add_todo">添加待办</string>
+    <string name="menu_new_course">新建课程</string>
+    <string name="menu_import_timetable">导入课表</string>
+
+    <!-- 课表管理（多课表切换） -->
+    <string name="drawer_timetables">课表管理</string>
+    <string name="tt_manage_title">课表管理</string>
+    <string name="tt_new_blank">新建空白课表</string>
+    <string name="tt_in_use">使用中</string>
+    <string name="tt_rename">重命名</string>
+    <string name="tt_delete">删除</string>
+    <string name="tt_rename_title">重命名课表</string>
+    <string name="tt_name_hint">请输入课表名称</string>
+    <string name="tt_rename_empty">名称不能为空</string>
+    <string name="tt_delete_confirm_msg">删除后该课表的全部课程将一并删除，且不可恢复。确定删除「%1$s」吗？</string>
+    <string name="tt_last_one">至少保留一张课表</string>
+    <string name="tt_course_count">%1$d 门课程</string>
+    <string name="tt_created">已创建空白课表，点击卡片可切换使用</string>
+    <string name="tt_renamed">已重命名</string>
+    <string name="tt_deleted">已删除课表</string>
+    <string name="tt_switched">已切换到「%1$s」</string>
+    <string name="tt_confirm">确定</string>
+    <string name="tt_paste_import">粘贴导入</string>
+    <string name="tt_blank_name">空白课表</string>
+
+    <!-- 格子明细弹窗（点有安排的格子） -->
+    <string name="dim_not_this_week">非本周</string>
+    <string name="cell_dialog_add">＋</string>
+    <string name="cell_empty_hint">当前格子暂无安排，点右上角 ＋ 新建</string>
+    <string name="cell_delete_confirm">确定删除「%1$s」吗？</string>
+    <string name="cell_swipe_hint">左滑卡片可删除</string>
+    <string name="todo_saved">已保存待办</string>
+    <string name="todo_deleted">已删除待办</string>
+    <string name="todo_title_required">请填写待办标题</string>
+    <!-- 待办优先级 / 四象限 -->
+    <string name="todo_priority_label">优先级</string>
+    <string name="todo_quadrant_label">四象限</string>
+    <string name="todo_unset">不设置</string>
+    <string name="todo_priority_high">高优先级</string>
+    <string name="todo_priority_mid">中优先级</string>
+    <string name="todo_priority_low">低优先级</string>
+    <string name="todo_quadrant_iu">重要且紧急</string>
+    <string name="todo_quadrant_inu">重要不紧急</string>
+    <string name="todo_quadrant_uni">紧急不重要</string>
+    <string name="todo_quadrant_nnu">不紧急不重要</string>
+    <!-- 左滑重置 -->
+    <string name="todo_reset">重置</string>
+    <string name="todo_reset_done">已重置为未完成</string>
+    <string name="todo_already_pending">已是未完成状态</string>
+    <string name="todo_month_pick_title">选择年月</string>
+    <string name="cell_room_prefix">教室：%1$s</string>
+    <string name="cell_teacher_prefix">老师：%1$s</string>
+    <string name="cell_note_prefix">备注：%1$s</string>
+    <string name="timetable_next_none">最近两周没有课</string>
+
+    <!-- 课程明细/编辑底部弹窗 -->
+    <string name="course_name_required">请填写课程名</string>
+    <string name="course_edit_title">编辑课程</string>
+    <string name="course_action_edit">编辑</string>
+    <string name="course_action_delete">删除</string>
+    <string name="course_action_cancel">取消</string>
+    <string name="course_action_save">保存</string>
+    <string name="course_action_create">添加</string>
+    <string name="course_created">已添加课程</string>
+
+    <!-- 侧边抽屉 -->
+    <string name="drawer_subtitle">学生效率工具箱</string>
+    <string name="drawer_import">导入课程表</string>
+    <string name="dialog_title">选择日期</string>
+    <string name="dialog_close">×</string>
+    <string name="dialog_arrow_left">‹</string>
+    <string name="dialog_arrow_right">›</string>
+    <string name="dialog_btn_today">回到今天</string>
+    <string name="dialog_btn_ok">确定</string>
+    <string name="dialog_week_chip">第%1$d周</string>
+    <string name="dialog_year_label">%1$d 年</string>
+
+    <!-- 待办列表页 -->
+    <string name="todo_title">待办列表</string>
+    <string name="todo_subtitle">10 月 12 日，周一 · 按日期查看待办</string>
+    <string name="todo_progress_msg">不错，今天已完成 44%</string>
+    <string name="todo_progress_percent">44%</string>
+    <string name="chip_today">今天 9</string>
+    <string name="chip_all">全部 9</string>
+    <string name="chip_done">已完成 4</string>
+    <string name="chip_todo_week">周待办表</string>
+    <string name="chip_todo_month">月待办表</string>
+    <string name="chip_todo_all">全部</string>
+    <string name="todo_sort">优先级</string>
+    <string name="todo_section_pending">待完成 (%1$d)</string>
+    <string name="todo_section_done">已完成 (%1$d)</string>
+    <string name="todo_collapse">收起 ∧</string>
+    <string name="todo_expand">展开 ∨</string>
+    <string name="todo_hint">✨ 试试在「规划」里，为重要的事留出时间</string>
+    <string name="todo_day_empty">这一天还没有待办，点右上角 ＋ 新建</string>
+
+    <!-- 习惯打卡页 -->
+    <string name="habit_title">习惯打卡</string>
+    <string name="habit_subtitle">10 月 12 日，周一 · 让小坚持成为日常</string>
+    <string name="habit_progress_title">今天已打卡 %1$d / %2$d</string>
+    <string name="habit_progress_msg">每天进步一点点，就很了不起。</string>
+    <string name="chip_habit_all_text">全部</string>
+    <string name="chip_habit_all">全部 4</string>
+    <string name="chip_habit_study">学习 2</string>
+    <string name="chip_habit_health">健康 1</string>
+    <string name="chip_habit_life">生活 1</string>
+    <string name="habit_category_title">自定义分类</string>
+    <string name="habit_category_subtitle">名称、颜色都可以由你定义</string>
+    <string name="habit_category_manage">管理</string>
+    <string name="habit_section_title">我的习惯</string>
+    <string name="habit_section_week">本周 10.12–10.18</string>
+    <string name="habit_week_label">本周</string>
+    <string name="habit_week_progress">本周已打卡 %1$d / %2$d 次</string>
+    <string name="habit_section_pending">未完成 (%1$d)</string>
+    <string name="habit_section_done">已完成 (%1$d)</string>
+    <string name="habit_done_today">✓ 已打卡</string>
+    <string name="habit_check_btn">打卡</string>
+    <string name="habit_hint">不用追求完美，记得为今天的自己打个勾。</string>
+    <!-- 习惯编辑页 / 频率 -->
+    <string name="habit_edit_add_title">新建习惯</string>
+    <string name="habit_edit_edit_title">编辑习惯</string>
+    <string name="habit_name_label">习惯名称</string>
+    <string name="habit_name_hint">例如：早起</string>
+    <string name="habit_name_required">请填写习惯名称</string>
+    <string name="habit_category_label">分类</string>
+    <string name="habit_category_none">无</string>
+    <string name="habit_category_add">＋ 新建分类</string>
+    <string name="habit_category_new_title">新建分类</string>
+    <string name="habit_category_edit_title">重命名分类</string>
+    <string name="habit_category_count">%1$d 个习惯</string>
+    <string name="habit_category_delete_confirm">确定删除分类「%1$s」吗？该分类下的 %2$d 个习惯将一并删除。</string>
+    <string name="habit_category_empty">还没有分类，点右上角新建</string>
+    <string name="habit_category_name_hint">例如：社交</string>
+    <string name="habit_cat_study">学习</string>
+    <string name="habit_cat_health">健康</string>
+    <string name="habit_cat_life">生活</string>
+    <string name="habit_icon_label">图标</string>
+    <string name="habit_color_label">颜色</string>
+    <string name="habit_freq_label">打卡频率</string>
+    <string name="habit_freq_daily">每天打卡</string>
+    <string name="habit_freq_weekdays">指定周几</string>
+    <string name="habit_freq_times">每周 %1$d 次</string>
+    <string name="habit_freq_pick_title">选择打卡频率</string>
+    <string name="habit_freq_mode_weekdays">按星期打卡</string>
+    <string name="habit_freq_mode_times">每周 N 次</string>
+    <string name="habit_weekdays_pick_title">选择周几打卡</string>
+    <string name="habit_times_pick_title">每周目标次数</string>
+    <string name="habit_saved">已保存习惯</string>
+    <string name="habit_deleted">已删除习惯</string>
+    <string name="habit_delete_confirm">确定删除习惯「%1$s」吗？打卡记录将一并删除。</string>
+    <string name="habit_uncheck_confirm">取消今天的打卡吗？</string>
+    <string name="habit_weekdays_text">周%1$s</string>
+    <string name="habit_streak">连续 %1$d 天</string>
+
+    <!-- 时间规划页 -->
+    <string name="plan_title">时间规划</string>
+    <string name="plan_subtitle">10 月 12 日，周一 · 把时间留给重要的事</string>
+    <string name="plan_timeline_title">待办时间轴</string>
+    <string name="plan_timeline_count">12 项待办</string>
+    <string name="plan_timeline_count_dyn">%1$d 项待办</string>
+    <string name="plan_day_empty">暂无安排</string>
+    <string name="plan_day_more">+%1$d 条</string>
+    <string name="plan_back_today">回到今天</string>
+    <string name="plan_swipe_hint">左右滑动，查看前后安排</string>
+    <string name="plan_quadrant_title">四象限待办</string>
+    <string name="plan_quadrant_hint">先重要，再紧急</string>
+    <string name="plan_quadrant_empty">暂无待办</string>
+    <string name="plan_suggestion">💡 今日建议：先用 30 分钟完成高数作业</string>
+    <string name="plan_suggestion_done">💡 今日待办已全部完成，去安排明天吧</string>
+    <string name="plan_suggestion_dyn">💡 今日还有 %1$d 项待办，先从最重要的开始</string>
+
+    <!-- 四象限文案 -->
+    <string name="quadrant1_title">重要且紧急</string>
+    <string name="quadrant1_sub">立即去做</string>
+    <string name="quadrant1_hint">先完成它，再做下一件事</string>
+    <string name="quadrant2_title">重要不紧急</string>
+    <string name="quadrant2_sub">安排时间</string>
+    <string name="quadrant2_hint">为长期目标留出时间</string>
+    <string name="quadrant3_title">紧急不重要</string>
+    <string name="quadrant3_sub">协作处理</string>
+    <string name="quadrant3_hint">和组员一起，高效解决</string>
+    <string name="quadrant4_title">不紧急不重要</string>
+    <string name="quadrant4_sub">有空再做</string>
+    <string name="quadrant4_hint">不着急，周末再安排</string>
+    <string name="plan_quadrant_detail_title">%1$s · %2$d 项</string>
+    <string name="plan_quadrant_empty_all">这个象限还没有待办</string>
+</resources>

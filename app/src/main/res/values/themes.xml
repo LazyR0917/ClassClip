@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ClassClip" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="android:windowBackground">@color/page_background</item>
+    </style>
+
+    <style name="Theme.ClassClip" parent="Base.Theme.ClassClip" />
+
+    <!-- 课程明细底部弹窗：上滑进入 / 下滑退出 -->
+    <style name="CourseSheetAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/course_sheet_slide_in</item>
+        <item name="android:windowExitAnimation">@anim/course_sheet_slide_out</item>
+    </style>
+</resources>

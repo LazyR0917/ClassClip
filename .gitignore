@@ -1,0 +1,32 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# 构建产物
+*.apk
+*.ap_
+*.aab
+app/debug/
+app/release/
+*/build/
+
+# 日志与临时文件
+*.log
+captures/
+.navigation/
+temp/
+
+# IDE 本地配置（含本地 SDK 路径、设备选择等，不入库）
+.idea/

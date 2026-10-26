@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- 底层按钮：左滑露出「重置 + 删除」，平时隐藏 -->
+    <TextView
+        android:id="@+id/btn_todo_reset"
+        android:layout_width="56dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:layout_marginEnd="56dp"
+        android:background="@color/brand_text_gray"
+        android:gravity="center"
+        android:text="@string/todo_reset"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/btn_todo_delete"
+        android:layout_width="56dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/brand_danger"
+        android:gravity="center"
+        android:text="@string/tt_delete"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+    <!-- 上层待办卡片 -->
+    <LinearLayout
+        android:id="@+id/item_todo_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_card_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp">
+
+        <!-- 圆形 checkbox：未完成为空心圈，完成为绿色实心勾，代码里切换 -->
+        <FrameLayout
+            android:layout_width="22dp"
+            android:layout_height="22dp">
+
+            <View
+                android:id="@+id/checkbox_pending"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_checkbox_pending" />
+
+            <FrameLayout
+                android:id="@+id/checkbox_done"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_checkbox_done"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/chip_done"
+                    android:src="@drawable/ic_check"
+                    app:tint="@color/white" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_todo_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/brand_text_dark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_todo_item_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/brand_text_gray"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

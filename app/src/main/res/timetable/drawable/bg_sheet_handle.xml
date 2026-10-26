@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 底部弹窗顶部的拖拽指示条 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#D9D9E3" />
+    <corners android:radius="2dp" />
+</shape>

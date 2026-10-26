@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- ClassClip 品牌色（取自原型图的靛蓝色调） -->
+    <color name="brand_primary">#5B5BD6</color>
+    <color name="brand_primary_light">#EDEDFD</color>
+    <color name="brand_text_dark">#1C1C33</color>
+    <color name="brand_text_gray">#8A8AA3</color>
+    <color name="brand_danger">#E03131</color>
+    <color name="page_background">#F7F7FB</color>
+
+    <!-- 课程块配色（浅底 + 深字） -->
+    <color name="course_blue_bg">#E3EAFD</color>
+    <color name="course_blue_text">#3B5BDB</color>
+    <color name="course_green_bg">#DFF3E7</color>
+    <color name="course_green_text">#2B8A4B</color>
+    <color name="course_orange_bg">#FDEEDC</color>
+    <color name="course_orange_text">#C77700</color>
+    <color name="course_purple_bg">#EFE7FD</color>
+    <color name="course_purple_text">#7048C8</color>
+    <color name="course_pink_bg">#FCE3EE</color>
+    <color name="course_pink_text">#C2255C</color>
+    <color name="course_teal_bg">#DFF6F3</color>
+    <color name="course_teal_text">#0B8C80</color>
+
+    <!-- 待办页 -->
+    <color name="todo_card_gray_bg">#F2F2F7</color>
+    <color name="checkbox_border">#D8D8E4</color>
+    <color name="done_green">#2B8A4B</color>
+    <color name="tag_gray_bg">#EFEFF5</color>
+    <color name="progress_track">#E2E2F0</color>
+
+    <!-- 习惯页图标底色 -->
+    <color name="icon_word_bg">#7C5CE0</color>
+    <color name="icon_read_bg">#F2B33D</color>
+    <color name="icon_run_bg">#14B8A6</color>
+    <color name="icon_sleep_bg">#4F46E5</color>
+
+    <!-- 规划页 -->
+    <color name="card_stroke">#E8E8F0</color>
+    <color name="timeline_line">#C5C9E8</color>
+</resources>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <!-- 底层红色删除按钮：左滑露出 -->
+    <TextView
+        android:id="@+id/btn_habit_delete"
+        android:layout_width="56dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/brand_danger"
+        android:gravity="center"
+        android:text="@string/tt_delete"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+
+    <!-- 上层习惯卡片 -->
+    <LinearLayout
+        android:id="@+id/item_habit_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card_white"
+        android:orientation="vertical"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="12dp">
+
+        <!-- 上半部分：图标 + 标题/副标题 + 打卡状态 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+
+                <View
+                    android:id="@+id/view_habit_icon_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/iv_habit_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/habit_section_title"
+                    app:tint="@color/white" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_habit_item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/brand_text_dark"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_habit_item_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/brand_text_gray"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <!-- 未完成：蓝色打卡按钮；已完成：绿色已打卡 chip。代码里切换 -->
+            <TextView
+                android:id="@+id/btn_habit_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_check"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:text="@string/habit_check_btn"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_habit_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_tag_done"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:text="@string/habit_done_today"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+        <!-- 下半部分：本周 7 天打卡格，代码动态填充 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/habit_week_label"
+                android:textColor="@color/brand_text_gray"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_habit_week"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+        <!-- 每周 N 次：本周目标进度（仅 freqType=3 显示，代码控制） -->
+        <LinearLayout
+            android:id="@+id/ll_habit_week_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_habit_week_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/brand_text_gray"
+                android:textSize="10sp" />
+
+            <ProgressBar
+                android:id="@+id/progress_habit_week"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="6dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:max="3"
+                android:progress="0"
+                android:progressBackgroundTint="@color/tag_gray_bg"
+                android:progressTint="@color/brand_primary" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

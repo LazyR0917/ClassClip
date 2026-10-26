@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp">
+
+    <!-- 底层按钮：左滑露出「重置 + 删除」（重置仅待办有） -->
+    <TextView
+        android:id="@+id/btn_item_reset"
+        android:layout_width="56dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:layout_marginEnd="56dp"
+        android:background="@color/brand_text_gray"
+        android:gravity="center"
+        android:text="@string/todo_reset"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+    <!-- 底层红色删除按钮：仅左滑露出时才可见，平时完全隐藏（不可见不可点） -->
+    <TextView
+        android:id="@+id/btn_item_delete"
+        android:layout_width="56dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/brand_danger"
+        android:gravity="center"
+        android:text="@string/tt_delete"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+    <!-- 上层待办卡片 -->
+    <LinearLayout
+        android:id="@+id/item_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card_gray"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- 标题（整卡可点进编辑） -->
+        <TextView
+            android:id="@+id/tv_item_todo_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brand_text_dark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="交实验报告" />
+
+        <TextView
+            android:id="@+id/tv_item_todo_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/brand_text_gray"
+            android:textSize="12sp"
+            tools:text="备注：带上周的实验数据" />
+
+        <TextView
+            android:id="@+id/tv_item_todo_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/brand_text_gray"
+            android:textSize="12sp"
+            tools:text="10.25 16:00" />
+    </LinearLayout>
+</FrameLayout>
